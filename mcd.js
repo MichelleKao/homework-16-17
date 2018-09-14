@@ -76,6 +76,16 @@ $("#chatPopover").popover({
     // Show the badge
     $("#cartItems").show();
 
+    // Confetti animation
     $.confetti.start();
     $('#stopConfetti').css( "opacity", "1" );
   });
+
+  // image animations Grow
+  $(".rec-item").click(
+    function(){
+      event.preventDefault();
+      $(this).toggleClass('grayscale');
+      $.confetti.stop();
+  }
+);

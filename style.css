@@ -12,8 +12,6 @@ body {
   }
   
   footer {
-    background-color: #9a82b9;
-    color: white;
     height: 100px;
     width: 100%;
     margin-top: 40px;
@@ -132,11 +130,6 @@ body {
     border-radius: 0;
   }
   
-  /* Similar Items */
-  .rec-item:hover {
-    border: 1px solid #f4c40e;
-  }
-  
   /* Chat Button for popover */
   .chat {
     position: fixed;
@@ -186,6 +179,17 @@ body {
     background-color: #f4c40e;
     color: white;
     display: none;
+  }
+  .rec-item{
+    height: 120px;
+    width: auto;
+    transition: all 0.4s ease-in-out;
+  }
+  .rec-item:hover {
+    transform: scale(2);
+  }
+  .rec-item.grayscale {
+    opacity: .5;
   }
   
   @media (max-width: 992px) {
