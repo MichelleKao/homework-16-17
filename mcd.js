@@ -78,14 +78,22 @@ $("#chatPopover").popover({
 
     // Confetti animation
     $.confetti.start();
-    $('#stopConfetti').css( "opacity", "1" );
-  });
+    $('#stopConfettiBtn').css( "opacity", "1" );
+    });
+  
+    $("#stopConfettiBtn").click(
+      function(){
 
-  // image animations Grow
-  $(".rec-item").click(
+      // event.preventDefault();
+      $.confetti.stop();
+      $('#stopConfettiBtn').css( "opacity", "0" );
+      });
+    // image animations Grow
+    $(".rec-item").click(
     function(){
       event.preventDefault();
       $(this).toggleClass('grayscale');
       $.confetti.stop();
-  }
-);
+     }
+   );
+ 

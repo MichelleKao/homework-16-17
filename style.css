@@ -197,8 +197,9 @@ body {
       display: none;
     }
   }
-  #stopConfetti {
+  #stopConfettiBtn {
       opacity: 0;
+      transition: all 0.4s ease-in-out;
   }
   canvas {
     pointer-events: none;
@@ -212,6 +213,13 @@ body {
     height: 120px;
     background-position: center;
     background-position-y: 5px;
+  }
 
-    
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn .5s ease-in 1 forwards;
+  }
+
+  #stopConfettiBtn:hover {
+    background: #d42c1c;
   }
